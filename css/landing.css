@@ -1,0 +1,303 @@
+body {
+  margin:0;
+  /* 무한증식 방지를 위한 max-width */
+  max-width: 2000px;  
+}
+
+img {
+  /* 이미지아래 공백 없애기 위해 */
+  display: block;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #2F2F2F;
+  color: white;  
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.font-small{
+  font-size: 20px;
+}
+
+i:hover {
+  background-color: lightpink;
+}
+
+/* main */
+
+.main-bg {
+  width: 100%;  
+  background: linear-gradient(#59ACFA,#3106B1);
+}
+
+.main-wrap {
+
+  display: flex;
+}
+
+.main-content {
+  width: 35%;
+  height: auto;
+  padding: 110px;
+  margin-left: 50px;
+  color: white;  
+}
+
+.main-content h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.main-img img{
+  width: 500px;
+  margin-top: 70px;
+  margin-right: 190px;
+}
+
+.main-content .btn {
+  width: 130px;
+}
+
+.btn:hover {
+  background-color: pink;
+  border: none;
+  cursor: pointer;
+}
+
+/* show */
+
+.show-bg {
+  width: 100%;
+  padding: 70px;
+}
+
+.show-content {
+  width: 100%;
+  text-align: center;
+  line-height: 18px;
+}
+
+.show-content .btn {
+  width: 100;
+}
+
+/* mid */
+
+.mid-bg {
+  width: 100%;
+  height: 500px;
+  background-color: #3106B1;
+  text-align: center;
+  padding: 0.1px;
+  color: white;
+}
+
+.mid-content {
+  width: 100%;
+}
+
+.mid-content>p{
+  margin-top: 70px;
+  margin-bottom: 3px;
+}
+
+.mid-content h2{
+  margin-top: 3px;
+  margin-bottom: 30px;;
+}
+
+.mid-flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mid-box {
+  margin: 30px;
+  line-height: 12px;
+}
+
+.mid-box p:nth-child(1) {
+  font-size: 20px;
+}
+
+.mid-box p:nth-child(2) {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.mid-bg i {
+  background-color: white;
+  color:#3106B1;
+  width: 100px;
+  height: 100px;
+  padding-top:25px;
+  box-sizing: border-box;
+  border-radius: 50%;
+} 
+
+i:hover {
+  background-color: lightpink;
+}
+
+/* section */
+
+.section-bg {
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+}
+
+.section-box {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin:auto;
+}
+
+.section-bg>p {
+  margin-bottom: 5px;
+}
+
+.section-bg>h2 {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.section-box>div{
+  width: 50%;
+  height: 350px;
+  background-size: cover;
+  color: white;
+  text-align: left;
+  padding-top: 70px;
+  padding-left: 50px
+}
+
+.section-img1 {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url(../portfolio-1.jpg);
+}
+
+.section-box div:nth-child(2) {
+  background-image: url(../portfolio-2.jpg);
+}
+
+.section-box div:nth-child(3) {
+  background-image: url(../portfolio-3.jpg);
+}
+
+.section-box div:nth-child(4) {
+  background-image: url(../portfolio-4.jpg);
+}
+
+.ani {
+  position: absolute;
+  padding: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 1s;
+}
+
+.section-img1:hover div {
+  border: 30px solid;
+}
+
+
+/* footer */
+
+.footer-bg {
+   width: 100%;
+   padding: 0.1px;
+}
+
+.footer-content {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-content div {
+  margin: 20px;
+}
+
+.footer-content i {
+  background-color: #3106B1;
+  color: white;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 20px;
+  border-radius: 50px;
+}
+
+i:hover {
+  background-color: lightpink;
+}
+
+/* 반응형 */
+
+@media screen and (max-width:768px) {
+
+  /* main */
+
+  .main-wrap {
+    display: block;
+    text-align: center;
+  }
+
+  .main-content {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    margin: auto;
+    color: white;  
+  }
+  
+  .main-content h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+
+  .main-content p {
+    font-size: 12px;
+  }
+  
+  .main-img img{
+    width: 300px;
+    margin-top: 70px;
+    margin: auto;
+  }
+
+  .main-content .btn {
+    width: 110px;
+    font-size: 12px;
+  }
+
+  /* section */
+  .section-box>div{
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    color: white;
+    text-align: left;
+    padding-top: 70px;
+    padding-left: 50px
+  }
+
+}
+
