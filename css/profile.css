@@ -1,0 +1,55 @@
+body {
+  box-sizing: border-box;
+}
+
+.border-left {
+  border-left: 1px solid lightgray
+}
+
+.border {
+  border: 1px solid;
+}
+
+.bg-gray {
+  background-color: #f7f9fc;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-sky {
+  background-color: #6fbaf8;
+}
+
+.font-sky {
+  color: #6fbaf8;
+}
+
+.font-white {
+  color: white;
+}
+
+.font-l {
+  font-size: 70px;
+}
+
+.font-bold-l {
+  font-weight: 700;
+}
+
+.font-bold-m {
+  font-weight: 600;
+}
+
+.font-bold-s {
+  font-weight: 500;
+}
+
+
+
+@media screen and (max-width:992px) {
+  .border-left {
+    border-left: 0px solid lightgray
+  }
+}
