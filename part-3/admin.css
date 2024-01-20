@@ -1,0 +1,242 @@
+.bg-purple-1 {
+  background-color: #6519c9;
+}
+
+.bg-eee {
+  background-color: #eee;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.common-font {
+  font-size: 15px;
+}
+
+.shadow-box {
+  box-shadow: 1px 1px 6px rgb(224, 219, 219);
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+/* side-bar */
+
+.wrap-box {
+  height: 100%;
+  display: flex;
+}
+
+.side-bar {
+  height: 100%;
+  min-width: 40px;
+}
+
+.ani-side {
+  position: fixed;
+  height: 100%;
+  width: 40px;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.ani-side>div {
+  display: flex;
+}
+
+.ani-side i {
+  display: block;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.ani-side p {
+  display: none;
+  color: white;
+  text-align: center;
+  display: block;
+  padding-top: 15px;
+  margin: 0px;
+  transform: translate(-100px);
+  transition: all 0.5s;
+}
+
+.ani-side:hover {
+  width: 130px;
+}
+
+.ani-side:hover i {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.ani-side:hover p {
+  display: block;
+  transform: translate(0px);
+
+}
+
+
+/* main-container-top */
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+.main-top {
+  width: 100%;
+  height: 50px;
+}
+
+.input-btn {
+  margin-left: 5px;
+  width: 200px;
+  padding: 5px;
+  float: left;
+  transition: all 1s;
+  z-index: 0;
+}
+
+.input-btn button {
+  background-color: black;
+  color: white;
+}
+
+.input-btn:focus-within {
+  width: 500px;
+}
+
+
+
+.mini-menu {
+  float: right;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.mini-menu i,span {
+  color: gray;
+  margin-right: 18px;
+}
+
+.mobile-mini-menu {
+  float: right;
+  margin-right: 25px;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  display: none;
+  border: 1px solid #eee;
+  color: gray;
+}
+
+/* main-container-bottom */
+
+.main-container {
+  padding: 20px;
+}
+
+.main-bottom {
+  width: 100%;
+}
+
+
+.ds-card-wrap {
+  display: flex;
+  width: 100%;
+}
+
+.ds-card {
+  width: 100%;
+  min-width: 250px;
+  height: 100px;
+  padding: 22px;
+  background-color: white;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.ds-card:hover i{
+  color : #FDC5F5;
+  font-size: 30px;
+}
+
+.border-l-pink {
+  border-left: 3px solid #FDC5F5;
+}
+
+.border-l-purple {
+  border-left: 3px solid #F7AEF8;
+}
+
+.border-l-blue {
+  border-left: 3px solid #8093F1;
+}
+
+.border-l-skyblue {
+  border-left: 3px solid #72DDF7;
+}
+
+.ds-card p {
+  margin: 3px;
+}
+
+.ds-card i {
+  font-size: 25px;
+  color: rgb(156, 152, 152);
+  float: right;
+  padding: 10px;
+}
+
+/* dashboard - bottom */
+
+.ds-bottom {
+  width: 98.5%;
+  height: auto;
+}
+
+.overview-title {
+  height: 50px;
+  padding: 12px 20px 0px;
+}
+
+.overview-chart {
+  background-color: white;
+}
+
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+.task {
+  height: 178px;
+}
+
+@media screen and (max-width:768px) {
+  .input-btn {
+    display: none;
+  }
+
+  .mini-menu {
+    float: right;
+    text-align: center;
+    padding-top: 12px;
+    display: none;
+  }
+
+  .mobile-mini-menu {
+    display: block;
+  }
+
+  .ds-card-wrap {
+    display: block;
+  }
+
+}
